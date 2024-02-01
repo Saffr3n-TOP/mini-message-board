@@ -26,3 +26,20 @@ form {
 label {
   display: grid;
 }
+
+.messages {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.message {
+  padding: 8px;
+  padding-top: 0;
+  border: 1px solid black;
+}
+
+small {
+  display: block;
+  text-align: end;
+}
