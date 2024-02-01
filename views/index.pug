@@ -2,4 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  .messages
+    each msg in messages
+      .message
+        h2= msg.user
+        p= msg.text
+        small= msg.added
+    else
+      p There are no messages yet...
