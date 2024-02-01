@@ -3,6 +3,8 @@ extends layout
 block content
   h1= title
   form(action="/new", method="post")
-    input(type="text", name="name")
-    input(type="text", name="message")
+    label(for="name") Username
+      input(type="text", name="name" id="name")
+    label(for="message") Message
+      input(type="text", name="message" id="message")
     button(type="submit") Send
